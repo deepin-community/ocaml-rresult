@@ -1,15 +1,57 @@
-Source: template-repository
-Section: unknown
+Source: ocaml-rresult
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
+Uploaders:
+ Stéphane Glondu <glondu@debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ ocaml,
+ ocaml-findlib,
+ ocamlbuild,
+ libtopkg-ocaml-dev,
+ opam-installer,
+ dh-ocaml
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
+Section: ocaml
+Homepage: http://erratique.ch/software/rresult
+Vcs-Browser: https://salsa.debian.org/ocaml-team/ocaml-rresult
+Vcs-Git: https://salsa.debian.org/ocaml-team/ocaml-rresult.git
 
-Package: template-repository
+Package: librresult-ocaml-dev
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends:
+ ${ocaml:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends}
+Provides:
+ ${ocaml:Provides}
+Recommends:
+ ocaml-findlib
+Description: result value combinators for OCaml (dev)
+ Rresult is an OCaml module for handling computation results and
+ errors in an explicit and declarative manner, without resorting to
+ exceptions. It defines combinators to operate on the result type
+ available from OCaml 4.03 in the standard library.
+ .
+ This package contains the development stuff needed to use the
+ rresult library in your programs.
+
+Package: librresult-ocaml
+Architecture: any
+Depends:
+ ${ocaml:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends}
+Provides:
+ ${ocaml:Provides}
+Suggests:
+ ocaml-findlib
+Description: result value combinators for OCaml (runtime)
+ Rresult is an OCaml module for handling computation results and
+ errors in an explicit and declarative manner, without resorting to
+ exceptions. It defines combinators to operate on the result type
+ available from OCaml 4.03 in the standard library.
+ .
+ This package contains the runtime libraries for programs using
+ rresult.
