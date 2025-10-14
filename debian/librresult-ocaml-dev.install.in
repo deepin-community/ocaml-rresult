@@ -1,0 +1,7 @@
+@OCamlStdlibDir@/rresult/*opam*
+@OCamlStdlibDir@/rresult/*.cmi
+@OCamlStdlibDir@/rresult/*.cmt*
+@OCamlStdlibDir@/rresult/*.ml*
+OPT: @OCamlStdlibDir@/rresult/*.cmx
+OPT: @OCamlStdlibDir@/rresult/*.cmxa
+OPT: @OCamlStdlibDir@/rresult/*.a

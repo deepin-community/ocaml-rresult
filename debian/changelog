@@ -1,5 +1,19 @@
-template-repository (1.0-1) unstable; urgency=medium
+ocaml-rresult (0.7.0-2) unstable; urgency=medium
 
-  * Initial release
+  * Depend on ocaml instead of transitional ocaml-nox
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Stéphane Glondu <glondu@debian.org>  Tue, 12 Sep 2023 09:27:00 +0200
+
+ocaml-rresult (0.7.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump Standards-Version to 4.6.0
+  * Bump debian/watch version to 4
+
+ -- Stéphane Glondu <glondu@debian.org>  Mon, 29 Nov 2021 12:51:30 +0100
+
+ocaml-rresult (0.6.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #969042)
+
+ -- Stéphane Glondu <glondu@debian.org>  Wed, 26 Aug 2020 17:47:46 +0200

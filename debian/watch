@@ -1,0 +1,2 @@
+version=4
+https://erratique.ch/software/rresult/releases/ .*rresult-([0-9.]+)\.tbz
