@@ -1,0 +1,3 @@
+@OCamlStdlibDir@/rresult/META
+@OCamlStdlibDir@/rresult/*.cma
+DYN: @OCamlStdlibDir@/rresult/*.cmxs
